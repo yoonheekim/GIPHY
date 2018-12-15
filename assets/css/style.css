@@ -9,6 +9,7 @@
     float: left;
     margin: 10px;
     padding: 10px;
+    background-color: white;
 }
 .img_div > p{
     margin-bottom: 0px;
@@ -20,5 +21,17 @@
     margin: 5px 0px 5px 0px;
 }
 .favorite{
-    margin: 10px 0px 40px 0px;
+    margin: 10px 0px 10px 0px;
+}
+body{
+    background-color: #fafafa;
+}
+header{
+    padding: 0px 40px 10px 40px;
+    background-color: white;
+    border-bottom: solid 1px lightgray;
+}
+form{
+    background-color: white;
+    padding: 15px;
 }
