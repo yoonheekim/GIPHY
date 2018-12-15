@@ -1,0 +1,24 @@
+.btn-data{
+    margin: 10px;
+}
+.btn-data:first-child{
+    margin-left: 0px;
+}
+
+.img_div{
+    float: left;
+    margin: 10px;
+    padding: 10px;
+}
+.img_div > p{
+    margin-bottom: 0px;
+}
+.top{
+    margin-bottom: 30px;
+}
+.download{
+    margin: 5px 0px 5px 0px;
+}
+.favorite{
+    margin: 10px 0px 40px 0px;
+}
