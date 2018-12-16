@@ -61,7 +61,7 @@ var GIPHY = {
             url: queryURL,
             method: "GET"
         }).then(function(response){
-            //console.log(response);
+            console.log(response);
             for(var i=0; i<response.data.length; i++){
                 var div = $("<div>");
                 div.attr("class","img_div border rounded");
@@ -74,7 +74,6 @@ var GIPHY = {
                 div.append(img_tag);
                 div.append("<br><p>Title : "+response.data[i].title+"</p>");
                 div.append("<p>Rating : "+response.data[i].rating+"</p>");
-                div.append("<a href='"+response.data[i].images.fixed_height.url+"' download><button type='button' class='download btn btn-sm btn-outline-info'>Download</button></a><br>");
                 div.append("<button id='"+response.data[i].id+"' type='button' class='addFavorite btn btn-outline-warning btn-sm'>Add Favorite <i class='fab fa-gratipay'></i></button>");
                 
                 
@@ -131,7 +130,6 @@ var GIPHY = {
                 div.append(img_tag);
                 div.append("<br><p>Title : "+response.data[i].title+"</p>");
                 div.append("<p>Rating : "+response.data[i].rating+"</p>");
-                div.append("<a href='"+response.data[i].images.fixed_height.url+"' download><button type='button' class='download btn btn-sm btn-outline-info'>Download</button></a><br>");
                 div.append("<button id='"+response.data[i].id+"' type='button' class='removeFavorite btn btn-outline-warning btn-sm'>Remove Favorite</button>");
                 
                 
@@ -193,3 +191,5 @@ $("#submit").on("click", function(){
         $("#input_search").val("");
     }
 });
+
+
